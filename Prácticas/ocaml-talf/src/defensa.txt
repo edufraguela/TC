@@ -1,0 +1,12 @@
+let e = Estado "0";;
+
+let b = Conjunto [Estado "0"; Estado "1"; Estado "2"; Estado "3"];;
+producto_cartesiano b b;;
+interseccion b b;;
+
+conj_estados (producto_cartesiano b b);;
+
+let ar = Conjunto [Arco_af (Estado "0", Estado "1", Terminal "a")];;
+producto_cartesiano_arcos ar ar;;
+conj_arcos(producto_cartesiano_arcos ar ar);;
+
